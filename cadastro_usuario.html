@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <form action="inserir.php" method="post">
+        Digite seu CPF: 
+        <input type="¨number" name="cpf">
+        <br><br>
+        Digite seu nome: 
+        <input type="text" name="nome">
+        <br><br>
+        Digite seu e-mail: 
+        <input type="text" name="email">
+        <br><br>
+        Insira uma senha: 
+        <input type="password" name="senha">
+        <br><br>
+        <input type="submit" value="GRAVAR">
+    </form>
+
+        <br><br>
+        informe o ID do usuário a ser deletado: 
+        <input type="number" name="id_usuario">
+        <img onclick="Deletar();" src="lixeira.png"  width="30px";>
+
+</body>
+<script>
+    function Deletar()
+    {
+        I = I.value
+        window.open("excluir.php?I="+I,"_self")
+    }
+</script>
+</html>
